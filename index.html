@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <script src="https://kit.fontawesome.com/c84e2f3d1e.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="custom/custom.css">
 </head>
 
 <!-- Contenido -->
@@ -45,7 +46,7 @@
     <nav class="nav-lg">
       <a href="#">Inicio</a>
       <a href="#">Destinos</a>
-      <a href="#">Atracciones</a>
+      <a href="actividades.html">Atracciones</a>
     </nav>
 
     <div class="container_buscar">
@@ -102,13 +103,12 @@
 
   <!-- Sección presentación -->
 
-  <section>
+  <section class="image-presentacion">
+    <img src="./img/image_presentacion.jpg" alt="">
     <div class="conteiner_encabezado">
       <h1>
         <span class="explora">¡Explorá!</span><br><span class="suiza_titulo">Suiza</span>
       </h1>
-    </div>
-    <div class="texto_presentacion">
       <p>
         Este país es <b>de ensueño</b> y es conocido por su belleza natural y su rica cultura. Rodeada por los
         majestuosos Alpes, ofrece paisajes de montañas nevadas, lagos cristalinos y verdes valles que parecen sacados de
@@ -118,11 +118,12 @@
         sus relojes de precisión y sus deliciosos quesos. Suiza es un destino que capturará tu corazón.
       </p>
     </div>
+
   </section>
 
   <!-- Cards -->
 
-  <div class="containertitcard">
+  <div>
     <h2>Lugares más visitados</h2>
   </div>
 
@@ -209,80 +210,31 @@
 
 
 
-  <!-- Cards opción 1
-    <div class="card-container">
-
-      <div class="card">
-        <img src="./img/zermatt.jpg" alt="Zermatt">
-        <div class="card-contenido">
-          <h3>Zermatt</h3>
-          <p>Zermatt está ubicado a los pies del Matterhorn. Su desarrollo turístico está estrechamente vinculado con la
-            montaña más famosa del mundo. Es un centro de vacaciones libre de automóviles que ha logrado mantener su
-            carácter originario y que ofrece posibilidades de paseo y excursión casi ilimitadas.</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="./img/basilea.jpg" alt="Basilea">
-        <div class="card-contenido">
-          <h3>Basilea</h3>
-          <p>La ciudad es conocida por sus numerosos museos de renombre internacional, desde el Museo de Arte de
-            Basilea, la primera colección de arte accesible al público en Europa (1661) y el museo de arte más grande de
-            toda Suiza, hasta la Fundación Beyeler (ubicada en Riehen)</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="./img/lucerna.jpeg" alt="Lucerna">
-        <div class="card-contenido">
-          <h3>Lucerna</h3>
-          <p>Ubicada ante un impresionante panorama alpino se halla Lucerna, la puerta de entrada a la Suiza Central, a
-            orillas del Lago de los Cuatro Cantones. Gracias a sus atracciones, sus atractivas tiendas, su ubicación
-            única junto al lago y las montañas de excursión cercanas Rigi, Pilatus o Stanserhorn, la ciudad es destino
-            de numerosos grupos de turistas y viajeros individuales que atraviesan Suiza.</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="./img/zurich.jpg" alt="Zurich">
-        <div class="card-contenido">
-          <h3>Zúrich</h3>
-          <p>La ciudad junto al agua combina la vida urbana con la naturaleza. Zúrich, con incontables acontecimientos,
-            muchos museos, una variada escena gastronómica y la vida nocturna más animada de Suiza, palpita tanto de día
-            como de noche. Quien busque descanso, por su parte, podrá acercarse en menos de una hora a las montañas
-            suizas.</p>
-        </div>
-      </div>
-
-    </div>  -->
-
-
   <!-- Formulario de Contacto -->
 
   <section>
-
-    <div class="titulo-form containertitcard">
+    <div class="text-form">
       <h2>Viajá con nosotros</h2>
-      <p> <b>¡Descubre Suiza con nosotros!</b> Nos dedicamos a transformar tus sueños de
+      <p> <b>¡Descubra Suiza con nosotros!</b> Nos dedicamos a transformar tus sueños de
         viaje en realidad. Con destinos exclusivos, paquetes personalizados y un equipo de expertos apasionados,
         garantizamos experiencias inolvidables que se adaptan a tus deseos y presupuesto. Desde montañas maravillosos
-        hasta ciudades vibrantes. Viajá con nosotros y convierte cada viaje en un
-        recuerdo para toda la vida. <b>¡Reserva hoy y empieza tu próxima gran aventura!</b></p>
+        hasta ciudades vibrantes. Viaja con nosotros y convierte cada viaje en un
+        recuerdo para toda la vida. <b>¡Complete este formulario y nos comunicaremos con usted!</b></p>
     </div>
     <div class="container my-5">
       <h3 class="formh3">Formulario de Contacto</h3>
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="tu nombre completo">
+        <label for="exampleFormControlInput1" class="form-label custom-label">Nombre y Apellido</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="escriba su nombre completo">
 
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+        <label for="exampleFormControlInput1" class="form-label custom-label">Correo electrónico</label>
         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombreejemplo@gmail.com">
-        <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con nadie más.</div>
+        <div id="emailHelp" class="form-text custom-text">Nunca compartiremos tu correo electrónico con nadie más.</div>
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+        <label for="exampleFormControlTextarea1" class="form-label custom-label">Mensaje</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
       <button type="submit" class="btn-form">Enviar</button>
@@ -314,9 +266,12 @@
 
     </div>
 
-    <a href="https://wa.me/1234567890" target="_blank">
-      <img class="whatsapp-icon" src="./img/whatsapp_icon.png" alt="">
-    </a>
+    <div>
+      <a href="https://wa.me/1234567890" target="_blank">
+        <img class="whatsapp-icon" src="./img/whatsapp_icon.png" alt="">
+      </a>
+    </div>
+    
 
   </footer>
 
